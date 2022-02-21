@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { FeedPost } from "../FeedPost/FeedPost";
+import { Sidebar } from "../Sidebar/Sidebar";
 import { Story } from "../Story/Story";
 import "./Feed.css";
 
@@ -19,10 +20,16 @@ export const Feed = () => {
 
 	return (
 		<div className="feed">
-			<Story />
-			{posts.map((post) => (
-				<FeedPost key={post.id} image={post.download_url} />
-			))}
+			<div className="feed-posts">
+				<Story />
+				{posts.map((post) => (
+					<FeedPost key={post.id} image={post.download_url} />
+				))}
+			</div>
+
+			<div className="feed-sidebar">
+				<Sidebar />
+			</div>
 		</div>
 	);
 };
