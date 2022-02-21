@@ -37,17 +37,17 @@ export const Sidebar = () => {
 			</div>
 
 			<ul className="footer">
-                <a href="#"><li>About</li></a>
-                <a href="#"><li>Help</li></a>
-                <a href="#"><li>Press</li></a>
-                <a href="#"><li>API</li></a>
-                <a href="#"><li>Jobs</li></a>
-                <a href="#"><li>Privacy</li></a>
-                <a href="#"><li>Terms</li></a>
-                <a href="#"><li>Locations</li></a>
-                <a href="#"><li>Top Accounts</li></a>
-                <a href="#"><li>Hashtags</li></a>
-                <a href="#"><li>Language</li></a>
+                <a href="https://about.instagram.com/" target="_blank" rel="noopener noreferrer"><li>About</li></a>
+                <a href="https://help.instagram.com/" target="_blank" rel="noopener noreferrer"><li>Help</li></a>
+                <a href="https://about.instagram.com/en_US/blog" target="_blank" rel="noopener noreferrer"><li>Press</li></a>
+                <a href="https://developers.facebook.com/docs/instagram" target="_blank" rel="noopener noreferrer"><li>API</li></a>
+                <a href="https://about.instagram.com/about-us/careers" target="_blank" rel="noopener noreferrer"><li>Jobs</li></a>
+                <a href="https://help.instagram.com/519522125107875/?maybe_redirect_pol=0" target="_blank" rel="noopener noreferrer"><li>Privacy</li></a>
+                <a href="https://help.instagram.com/581066165581870" target="_blank" rel="noopener noreferrer"><li>Terms</li></a>
+                <a href="https://www.instagram.com/explore/locations/" target="_blank" rel="noopener noreferrer"><li>Locations</li></a>
+                <a href="https://www.instagram.com/directory/profiles/" target="_blank" rel="noopener noreferrer"><li>Top Accounts</li></a>
+                <a href="https://www.instagram.com/directory/hashtags/" target="_blank" rel="noopener noreferrer"><li>Hashtags</li></a>
+                <li>Language</li>
             </ul>
 			<p className="copyright">&copy; 2022 INSTAGRAM FROM META</p>
 		</div>
