@@ -1,0 +1,29 @@
+.storypost {
+    margin: 0 18px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.storypost p {
+    font-size: 12px;
+}
+
+.storypost-img {
+    margin: 3px 0 5px 0;
+	width: 62px;
+	height: 62px;
+	border: 2px solid orangered;
+	border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.storypost-img img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+    border: 1px solid white;
+	border-radius: 50%;
+}
