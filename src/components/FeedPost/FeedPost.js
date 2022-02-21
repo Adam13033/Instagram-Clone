@@ -11,7 +11,7 @@ export const FeedPost = (props) => {
 			<div className="post-top">
 				<div className="post-user">
 					<div className="post-user-img">
-						<img src={Avatar} />
+						<img src={Avatar} alt="User's profile picture" />
 					</div>
 					<h4>username</h4>
 				</div>
@@ -22,7 +22,7 @@ export const FeedPost = (props) => {
 			</div>
 
 			<div className="post-image">
-				<img src={props.image} />
+				<img src={props.image} alt="Image posted by user" />
 			</div>
 
 			<div className="post-info">
