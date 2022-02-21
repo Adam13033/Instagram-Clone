@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { FeedPost } from "../FeedPost/FeedPost";
+import "./Feed.css"
 
 export const Feed = () => {
 	const [posts, setPosts] = useState([]);
@@ -16,7 +17,7 @@ export const Feed = () => {
 	};
 
 	return (
-		<div>
+		<div className="feed">
 			{posts.map((post) => (
 				<FeedPost key={post.id} image={post.download_url} />
 			))}

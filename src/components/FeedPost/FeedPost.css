@@ -1,10 +1,138 @@
+.post {
+	margin-top: 24px;
+	width: 600px;
+}
+
+.post h4 {
+	font-weight: 600;
+}
+
+.post p span {
+	font-weight: 600;
+	margin: 0 5px 0 0;
+}
+
+.post-top {
+	padding: 0 15px;
+	height: 60px;
+	border: 1px solid var(--color-grey);
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.post-user {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.post-user-img {
+	margin: 0 15px 0 0;
+	width: 30px;
+	height: 30px;
+	/* border: 2px solid red; */
+	border-radius: 50%;
+}
+
+.post-user-img img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 50%;
+}
+
 .post-image {
-    width: 500px;
-    height: 500px;
+	width: auto;
+	height: 600px;
 }
 
 .post-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.post-info {
+	padding: 15px;
+	border: 1px solid var(--color-grey);
+	border-bottom: none;
+}
+
+.post-info h4 {
+	margin: 0 0 6px;
+}
+
+.post-text-grey {
+	margin: 10px 0 0 0;
+	color: var(--color-darkgrey);
+	font-size: 10px;
+	text-transform: uppercase;
+}
+
+.post-icons {
+	margin: 0 0 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.post-icons-act {
+	width: 110px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.post-comment {
+	padding: 15px;
+	height: 52px;
+	max-height: 80px;
+	border: 1px solid var(--color-grey);
+	border-top: 1px solid var(--color-lightgrey);
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.post-comment-act {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.post-comment-act form {
+	display: flex;
+	justify-content: space-between;
+}
+
+.post-comment-act textarea {
+	border: none;
+	padding: 0 15px;
+	width: 515px;
+	height: 20px;
+	overflow-y: auto;
+	resize: none;
+	vertical-align: middle;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.post-comment-act textarea::placeholder {
+	color: var(--color-darkgrey);
+}
+
+.post-comment-act textarea:focus {
+	outline: none;
+}
+
+.post-comment-act button {
+	border: none;
+	background: none;
+	color: var(--color-blue);
+	font-weight: 600;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	cursor: pointer;
 }
