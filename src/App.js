@@ -1,9 +1,15 @@
 import "./App.css";
+import { Navbar } from "./components/Navbar/Navbar";
 import { Feed } from "./components/Feed/Feed";
 
 const App = () => {
 	return (
-		<Feed />
+		<div>
+			<Navbar />
+			<div className="app-home">
+				<Feed />
+			</div>
+		</div>
 	);
 };
 

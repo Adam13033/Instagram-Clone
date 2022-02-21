@@ -1,5 +1,5 @@
 import "./FeedPost.css";
-import Avatar from "./FeedPostAvatar.png";
+import Avatar from "../../images/Avatar.png";
 import { FaRegBookmark, FaRegComment, FaRegHeart } from "react-icons/fa";
 import { FiSend, FiSmile } from "react-icons/fi";
 import { BsThreeDots } from "react-icons/bs";
@@ -11,7 +11,7 @@ export const FeedPost = (props) => {
 			<div className="post-top">
 				<div className="post-user">
 					<div className="post-user-img">
-						<img src={Avatar} alt="User's profile picture" />
+						<img src={Avatar} alt="" />
 					</div>
 					<h4>username</h4>
 				</div>
@@ -22,7 +22,7 @@ export const FeedPost = (props) => {
 			</div>
 
 			<div className="post-image">
-				<img src={props.image} alt="Image posted by user" />
+				<img src={props.image} alt="" />
 			</div>
 
 			<div className="post-info">

@@ -1,6 +1,7 @@
 .post {
 	margin-top: 24px;
 	width: 600px;
+	background-color: var(--bg-white);
 }
 
 .post h4 {

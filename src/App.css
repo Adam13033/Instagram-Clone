@@ -6,13 +6,21 @@
 
 :root {
 	--text-size: 14px;
-	--color-grey: #D8D8D8;
+	--color-grey: #d8d8d8;
 	--color-darkgrey: #919191;
 	--color-lightgrey: #ebebeb;
 	--color-blue: #0095f6;
+	--bg-white: #fffefe;
+	--bg-grey: #fbfafb;
+	--bg-darkgrey: #efeeee;
 }
 
 body p,
 body h4 {
 	font-size: var(--text-size);
+}
+
+.app-home {
+	margin: 60px 0 0 0;
+	background-color: var(--bg-grey);
 }
