@@ -1,25 +1,31 @@
 import { Link } from "react-router-dom";
 import "./Login.css";
+import Logo from "../../images/LogoInstagram.png";
 
 export const Login = ({ props }) => {
 	return (
-		<div>
-			<h2>Log In</h2>
-			<form onSubmit={props.handleLogin}>
-				<input
-					onChange={(e) => props.setUsername(e.target.value)}
-					placeholder="username"
-				/>
-				<input
-					onChange={(e) => props.setPassword(e.target.value)}
-					placeholder="password"
-				/>
-				<button type="submit">Log in</button>
-			</form>
-			<div>
+		<div className="form-page">
+			<div className="form-container">
+				<div className="logo">
+					<img src={Logo} alt="" />
+				</div>
+				<form onSubmit={props.handleLogin} className="form">
+					<input
+						onChange={(e) => props.setUsername(e.target.value)}
+						placeholder="Username"
+					/>
+					<input
+						onChange={(e) => props.setPassword(e.target.value)}
+						placeholder="Password"
+					/>
+					<button type="submit">Log In</button>
+				</form>
+			</div>
+
+			<div className="signup">
 				<p>Don't have an account?</p>
 				<Link to="signup">
-					<p>Sign up</p>
+					<h4>Sign up</h4>
 				</Link>
 			</div>
 		</div>

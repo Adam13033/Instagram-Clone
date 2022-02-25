@@ -42,7 +42,8 @@ const App = () => {
 				</Router>
 			) : (
 				<Router>
-					<Routes>
+					<div className="app">
+						<Routes>
 						<Route
 							path="/"
 							element={
@@ -69,6 +70,8 @@ const App = () => {
 							}
 						/>
 					</Routes>
+					</div>
+					
 				</Router>
 			)}
 		</div>
