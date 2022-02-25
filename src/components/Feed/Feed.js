@@ -4,14 +4,14 @@ import { Sidebar } from "../Sidebar/Sidebar";
 import { Story } from "../Story/Story";
 import "./Feed.css";
 
-export const Feed = () => {
+export const Feed = ({ user }) => {
 	const [posts, setPosts] = useState([]);
 
 	useEffect(() => {
-		getCats();
+		getPics();
 	}, []);
 
-	const getCats = async () => {
+	const getPics = async () => {
 		const response = await fetch("https://picsum.photos/v2/list");
 		const data = await response.json();
 		console.log(data);
@@ -28,7 +28,7 @@ export const Feed = () => {
 			</div>
 
 			<div className="feed-sidebar">
-				<Sidebar />
+				<Sidebar user={user} />
 			</div>
 		</div>
 	);

@@ -1,7 +1,7 @@
 import "./Sidebar.css";
 import Avatar from "../../images/Avatar.png";
 
-export const Sidebar = () => {
+export const Sidebar = ({ user }) => {
 	return (
 		<div className="sidebar">
 			<div className="user">
@@ -10,7 +10,7 @@ export const Sidebar = () => {
 						<img src={Avatar} alt="" />
 					</div>
 					<div>
-						<h4>username</h4>
+						<h4>{user ? user.user.username : "username"}</h4>
 						<p>Display name</p>
 					</div>
 				</div>
