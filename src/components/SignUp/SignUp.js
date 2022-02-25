@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./SignUp.css";
 
 export const SignUp = ({ props }) => {
@@ -19,6 +20,12 @@ export const SignUp = ({ props }) => {
 				/>
 				<button type="submit">Sign Up</button>
 			</form>
+			<div>
+				<p>Have an account?</p>
+				<Link to="/">
+					<p>Log in</p>
+				</Link>
+			</div>
 		</div>
 	);
 };

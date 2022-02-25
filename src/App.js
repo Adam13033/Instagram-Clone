@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 import "./App.css";
 import { fetchLogin, fetchSignUp } from "./utils";
 import { Navbar } from "./components/Navbar/Navbar";
@@ -25,19 +27,49 @@ const App = () => {
 	return (
 		<div>
 			{user ? (
-				<div>
+				<Router>
 					<Navbar />
-					<div className="app-home">
-						<Feed user={user} />
-					</div>
-				</div>
+					<Routes>
+						<Route
+							path="/"
+							element={
+								<div className="app-home">
+									<Feed user={user} />
+								</div>
+							}
+						/>
+					</Routes>
+				</Router>
 			) : (
-				<div>
-					<SignUp
-						props={{ handleSignUp, setEmail, setUsername, setPassword }}
-					/>
-					<Login props={{ handleLogin, setUsername, setPassword }} />
-				</div>
+				<Router>
+					<Routes>
+						<Route
+							path="/"
+							element={
+								<Login
+									props={{
+										handleLogin,
+										setUsername,
+										setPassword,
+									}}
+								/>
+							}
+						/>
+						<Route
+							path="signup"
+							element={
+								<SignUp
+									props={{
+										handleSignUp,
+										setEmail,
+										setUsername,
+										setPassword,
+									}}
+								/>
+							}
+						/>
+					</Routes>
+				</Router>
 			)}
 		</div>
 	);
