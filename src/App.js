@@ -1,9 +1,10 @@
 import { useState } from "react";
 import "./App.css";
-import { fetchSignUp } from "./utils";
+import { fetchLogin, fetchSignUp } from "./utils";
 import { Navbar } from "./components/Navbar/Navbar";
 import { Feed } from "./components/Feed/Feed";
 import { SignUp } from "./components/SignUp/SignUp";
+import { Login } from "./components/Login/Login";
 
 const App = () => {
 	const [user, setUser] = useState();
@@ -16,6 +17,11 @@ const App = () => {
 		fetchSignUp(setUser, email, username, password);
 	};
 
+	const handleLogin = async (e) => {
+		e.preventDefault();
+		fetchLogin(setUser, username, password);
+	};
+
 	return (
 		<div>
 			{user ? (
@@ -26,9 +32,12 @@ const App = () => {
 					</div>
 				</div>
 			) : (
-				<SignUp
-					props={{ handleSignUp, setEmail, setUsername, setPassword }}
-				/>
+				<div>
+					<SignUp
+						props={{ handleSignUp, setEmail, setUsername, setPassword }}
+					/>
+					<Login props={{ handleLogin, setUsername, setPassword }} />
+				</div>
 			)}
 		</div>
 	);
