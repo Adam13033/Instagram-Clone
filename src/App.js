@@ -41,38 +41,24 @@ const App = () => {
 					</Routes>
 				</Router>
 			) : (
-				<Router>
-					<div className="app">
-						<Routes>
-						<Route
-							path="/"
-							element={
-								<Login
-									props={{
-										handleLogin,
-										setUsername,
-										setPassword,
-									}}
-								/>
-							}
-						/>
-						<Route
-							path="signup"
-							element={
-								<SignUp
-									props={{
-										handleSignUp,
-										setEmail,
-										setUsername,
-										setPassword,
-									}}
-								/>
-							}
-						/>
-					</Routes>
-					</div>
-					
-				</Router>
+				<div className="login-signup">
+					<Login
+						props={{
+							handleLogin,
+							setUsername,
+							setPassword,
+						}}
+					/>
+
+					<SignUp
+						props={{
+							handleSignUp,
+							setEmail,
+							setUsername,
+							setPassword,
+						}}
+					/>
+				</div>
 			)}
 		</div>
 	);

@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import "./Login.css";
 import Logo from "../../images/LogoInstagram.png";
 
@@ -22,12 +21,12 @@ export const Login = ({ props }) => {
 				</form>
 			</div>
 
-			<div className="signup">
+			{/* <div className="signup">
 				<p>Don't have an account?</p>
 				<Link to="signup">
 					<h4>Sign up</h4>
 				</Link>
-			</div>
+			</div> */}
 		</div>
 	);
 };
